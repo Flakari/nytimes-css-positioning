@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'cheltenham';
+    src: url(../fonts/Cheltenham_BookItalic.ttf)
+}
+
 * {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -14,20 +19,54 @@ body {
 
 #main-header {
     text-align: center;
-    padding-top: 14px;
-    padding-bottom: 8px;
-    border-bottom: 1px rgb(210, 210, 210) solid;
+    padding-top: 12px;
+    padding-bottom: 5px;
+    border-bottom: 1px #d2d2d2 solid;
+}
+
+#sections {
+    border-radius: 2px;
+    background-color: white;
+    left: 14px;
+    top: 9px;
+    float: left;
+    padding: 6px;
+    height: 15px;
+    width: 90px;
+    position: absolute;
+    border: 1px #b5b5b5 solid;
+    font-size: 0.67em;
+    font-weight: 700;
+    box-shadow: 1px 2px 2px 0px #f3f3f3;
+}
+
+#sections-icon {
+    width: 14px;
+    height: 14px;
+    background-image: url(../images/sprite-no-repeat.svg);
+    background-position: -36px 83px;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    left: -3px;
+    margin-right: 3px;
+}
+
+#sections span {
+    font-family: Arial, Helvetica, sans-serif;
+    vertical-align: 3px;
 }
 
 .ticker-content {
     box-sizing: border-box;
-    padding: 8px;
+    padding: 6px;
     padding-right: 9px;
+    padding-left: 8px;
     float: left;
-    width: 253px;
+    width: 251px;
     list-style-type: none;
     margin: 3px 0;
-    border-right: 1px rgb(199, 199, 199) solid;
+    border-right: 1px #c7c7c7 solid;
 }
 
 .ticker-content img {
@@ -37,15 +76,15 @@ body {
 }
 
 .ticker-content a {
-    color: rgb(75, 75, 75);
+    color: #4b4b4b;
     text-decoration: none;
 }
 
 .ticker-content h2 {
     font-size: 0.8em;
-    letter-spacing: 0.04em;
     font-weight: 500;
     margin: 0;
+    letter-spacing: 0.02em;
 }
 
 .ticker-content h3 {
@@ -56,10 +95,13 @@ body {
     text-transform: uppercase;
     color: black;
     margin: 0;
+    margin-bottom: 2px;
 }
 
 #ticker-container {
     overflow: hidden;
+    box-shadow: 0px 5px 4px #eaeaea;
+    border-bottom: 1px #b3b3b3 solid;
 }
 
 #ticker-container ul {
@@ -69,9 +111,60 @@ body {
 }
 
 #main {
-    margin-left: 120px;
+    margin-left: 200px;
+    border-top: 1px black solid;
+    margin-top: 4px;
+    width: 1125px;
+}
+
+#main header h2 {
+    margin-top: 10px;
+    font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    font-weight: 750;
+}
+
+#main header img {
+    width: 100%;
+}
+
+#main header aside {
+    margin-top: 5px;
+    width: 610px;
+    font-size: 0.885em;
+    color: #555555;
+    line-height: 1.3;
+}
+
+.img-credit {
+    font-size: 0.8em;
+    color: #797979;
 }
 
 #main article {
-    width: 650px;
+    width: 580px;
+    margin-left: 75px;
+    line-height: 1.6;
+    font-size: 1.08em;
+    margin-top: 75px;
+    color: #2c2c2c;
+}
+
+#main article h3 {
+    font-size: 1em;
+}
+
+#art-title {
+    font-family: 'cheltenham', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+    font-size: 1.88em;
+    margin-top: 35px;
+}
+
+#inflation-diagram {
+    width: 950px;
+    height: 580px;
+    background-image: url(../images/inflation-945.png);
+    background-size: contain;
 }
