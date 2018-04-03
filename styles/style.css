@@ -24,16 +24,21 @@ body {
     border-bottom: 1px #d2d2d2 solid;
 }
 
+#site-logo {
+    position: relative;
+    right: 65px;
+}
+
 #sections {
     border-radius: 2px;
     background-color: white;
-    left: 14px;
-    top: 9px;
+    left: -19px;
+    top: -3px;
     float: left;
     padding: 6px;
     height: 15px;
     width: 90px;
-    position: absolute;
+    position: relative;
     border: 1px #b5b5b5 solid;
     font-size: 0.67em;
     font-weight: 700;
@@ -142,7 +147,7 @@ body {
     color: #797979;
 }
 
-#main article {
+.article-text {
     width: 580px;
     margin-left: 75px;
     line-height: 1.6;
@@ -167,4 +172,41 @@ body {
     height: 580px;
     background-image: url(../images/inflation-945.png);
     background-size: contain;
+}
+
+#dt-top {
+    top: 141px;
+    position: relative;
+}
+
+#dt-bottom {
+    top: 294px;
+    position: relative;
+}
+
+.diagram-text {
+    width: 228px;
+    background-color: yellow;
+    float: left;
+    margin-right: 12px;
+    font-size: 0.9em;
+}
+
+.dt-right {
+    margin-right: 0;
+}
+
+#newsletter {
+    background-color: yellow;
+    width: 320px;
+    float: left;
+}
+
+@media screen and (min-width: 1601px) {
+    #container {
+        margin: 0;
+        margin: auto;
+        width: 1553px;
+        box-shadow: 0px 0px 6px 1px #d0d0d0;
+    }
 }
