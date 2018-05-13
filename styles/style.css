@@ -24,9 +24,34 @@ body {
     border-bottom: 1px #d2d2d2 solid;
 }
 
+#header-buttons {
+    float: right;
+    margin-right: 20px;
+    position: relative;
+    bottom: 6px;
+}
+
+#header-buttons button {
+    height: 33px;
+    margin-right: 5px;
+    border: 1px #326891 solid;
+    background-color: #598ba7;
+    border-radius: 3px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.7em;
+    font-weight: bold;
+    padding: 0 15px;
+    transition: ease 0.6s;
+}
+
+#header-buttons button:hover {
+    background-color: #166b93;
+}
+
 #site-logo {
     position: relative;
-    right: 65px;
+    left: 45px;
 }
 
 #sections {
@@ -200,6 +225,22 @@ article hr {
     background-size: contain;
 }
 
+#diagram-title {
+    width: 960px;
+    font-size: 0.9em;
+    color: #757575;
+    margin-bottom: 15px;
+    margin-top: 65px;
+}
+
+#diagram-title div {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.3em;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
 #dt-top {
     top: 141px;
     position: relative;
@@ -211,24 +252,44 @@ article hr {
 }
 
 .diagram-text {
-    width: 228px;
-    background-color: yellow;
+    width: 213px;
     float: left;
-    margin-right: 12px;
+    margin-right: 30px;
     font-size: 0.9em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dt-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.75em;
+    font-weight: 800;
+    margin-right: 12px;
 }
 
 .dt-right {
     margin-right: 0;
 }
 
-#newsletter {
+#diagram-hr {
+    border: none;
+    height: 1px;
+    width: 67px;
+    background-color: black;
+    margin-top: 70px;
+}
+
+#diagram-credits {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+}
+
+/*#newsletter {
     background-color: yellow;
     height: 318px;
     width: 300px;
     margin-right: 30px;
     float: left;
-}
+}*/
 
 @media screen and (min-width: 1601px) {
     #container {
